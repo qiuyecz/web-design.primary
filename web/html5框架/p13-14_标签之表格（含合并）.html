@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    表格构建
+
+    <table border="1" wdith="" height="">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <!--快速生成表格结构: table>tr*2>td*2{文字信息} -->
+
+    
+    表格单元格合并
+
+    <p>合并单元格3 4:colspan</p>
+    <p>合并单元格9 13:rowspan</p>
+    <p>水平合并保左删右，垂直合并保上删下</p>
+
+    <table border="1" width="500" height="200">
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <td colspan="2">单元格3 单元格4</td>
+        </tr>
+        <tr>
+            <td>单元格5</td>
+            <td>单元格6</td>
+            <td>单元格7</td>
+            <td>单元格8</td>
+        </tr>
+        <tr>
+            <td rowspan="2">单元格9 单元格13</td>
+            <td>单元格10</td>
+            <td>单元格11</td>
+            <td>单元格12</td>
+        </tr>
+        <tr>
+            <td>单元格14</td>
+            <td>单元格15</td>
+            <td>单元格16</td>
+        </tr>
+    </table>
+</body>
+
+</html>

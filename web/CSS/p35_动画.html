@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myanimate{
+            0%{
+                background-color: red;
+            }
+            50%{
+                background-color: green;
+                
+            }
+            100%{
+                background-color: red;
+
+            }
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            animation: myanimate 3s linear 0s   infinite;
+        }
+        div:hover{
+
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    @keyframes myanimate{
+        from|0%{
+
+        }
+        50%{
+
+        }
+        to|100%{
+
+        }
+    }
+
+    animation:name(动画名称) 
+              duration(动画持续时间) 
+              timing-function(动画效果速率)
+              delay(设置动画开始时间，延时执行)
+              iteration-count(设置动画循环次数，infinite为无限次数的循环)
+              direction(动画播放的方向)
+              animation-play-state(动画的播放状态，running代表播放，pause代表停止播放)
+    timing-function:ease(逐渐变慢，默认)
+                    linear(匀速)
+                    ease-in(加速)
+                    ease-out(减速)
+                    ease-in-out(先加后减)
+    direction:normal(从前往后放，默认)
+              alterna(偶数次向前播放，奇数次反方向播放)
+
+    <div>
+
+    </div>
+</body>
+
+</html>

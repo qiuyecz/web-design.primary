@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            left:100px;
+            top: 100px;
+            z-index: 2;
+        }
+
+        .box2 {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            position: absolute;
+            z-index:1;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+        }
+        h3{
+            height:500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">相对定位:relative</div>
+    <div class="box2">绝对定位:absolute 多个会出现遮盖</div>
+    <div class="box3">固定定位:fixed 随滚动而滚动</div>
+    <h3>固定定位与绝对定位区别</h3>
+    <h3>固定定位与绝对定位区别</h3>
+    <h3>z-index的大小决定谁覆盖谁</h3>
+
+</body>
+
+</html>

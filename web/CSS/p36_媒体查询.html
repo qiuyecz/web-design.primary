@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height:300px;
+            background-color: red;
+        }
+        @media screen and (max-width:768px){
+            .box{
+                background-color: aqua;
+            }
+            .p1{
+                display:none;
+            }
+            .p2{
+                display:none;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:996px){
+            .box{
+                background-color: chartreuse;
+            }
+            .p2{
+                display:block;
+            }.p2{
+                display:none;
+            }
+        }
+        @media screen and (min-width:996px){
+            .box{
+                background-color: red;
+            }.p2{
+                display:block;
+            }.p2{
+                display:block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>媒体查询会根据设备大小自动识别加载不同样式</p>
+    <div class="box"></div>
+    <p class="p1">内容隐藏与显现</p>
+    <p class="p2">内容隐藏与显现</p>
+</body>
+
+</html>

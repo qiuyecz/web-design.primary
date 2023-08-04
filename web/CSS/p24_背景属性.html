@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxl1{
+            width:400px;
+            height:400px;
+            background-color:#00ff00;
+        }
+        .boxl2{
+            width:400px;
+            height:400px;
+            background-image:url("1.jpeg");
+            background-repeat:no-repeat;
+            /*repeat默认值；repeat-x/y只向水平/垂直方向平铺；no-repeat不平铺*/
+            background-size:cover ;
+            /*cover有裁剪但是充满；contain无裁剪尽量充满*/
+            background-position: left center;
+            /*left,center,right,top,bottom*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxl1">
+    </div>
+    <div class="boxl2"></div>
+</body>
+
+</html>
